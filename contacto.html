@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Vida Productiva</title>
+  <meta name="description" content="Contacta con el equipo de Vida Productiva. Envíanos tus preguntas, sugerencias o propuestas de colaboración.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vidaproductiva.github.io/contacto.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vidaproductiva.github.io/contacto.html">
+  <meta property="og:title" content="Contacto | Vida Productiva">
+  <meta property="og:description" content="Ponte en contacto con nosotros.">
+  <meta property="og:locale" content="es_ES">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Vida<span>Productiva</span></a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="articulos.html">Artículos</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Contacto</h1>
+      <p>¿Tienes alguna pregunta o sugerencia? Escríbenos.</p>
+    </section>
+
+    <div class="container">
+      <div class="content-box">
+        <p>Puedes utilizar el siguiente formulario para enviarnos un mensaje. Responderemos lo antes posible.</p>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+          <strong>Nota:</strong> Este formulario es estático (GitHub Pages no procesa formularios). Para que funcione de verdad puedes conectar un servicio gratuito como Formspree, Netlify Forms o un formulario de Google.
+        </p>
+
+        <form action="#" method="POST" onsubmit="alert('Este es un formulario de demostración. Conecta un servicio de formularios para recibirlo.'); return false;">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required placeholder="tu@email.com" autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto" required placeholder="Asunto del mensaje">
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje aquí..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+
+        <h2 style="margin-top: 2.5rem;">Otras formas de contacto</h2>
+        <p>También puedes escribirnos directamente si prefieres usar tu cliente de correo habitual. Cuando configures el dominio o un servicio de email, añade aquí la dirección correspondiente.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Vida Productiva</h4>
+        <p style="font-size: 0.9rem; line-height: 1.6;">Consejos prácticos sobre productividad, hábitos y organización personal.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="articulos.html">Artículos</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="politica-privacidad.html">Política de privacidad</a></li>
+          <li><a href="aviso-legal.html">Aviso legal</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year">2025</span> Vida Productiva. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
